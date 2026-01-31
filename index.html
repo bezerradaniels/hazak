@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TJMRWTFJ');</script>
+  <!-- End Google Tag Manager -->
+
+  
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/img/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia Hazak Fit em Bom Jesus da Lapa</title>
+
+  <meta name="description" content="Academia Hazak Fit em Bom Jesus da Lapa" />
+  <meta name="keywords"
+    content="Academia Hazak Fit, Bom Jesus da Lapa, Academia, Fitness, Treinamento, Musculação, Cardiologia" />
+  <meta name="author" content="Hazak Fit" />
+
+  <meta property="og:title" content="Academia Hazak Fit em Bom Jesus da Lapa" />
+  <meta property="og:description" content="Academia Hazak Fit em Bom Jesus da Lapa" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hazakfit.com" />
+  <meta property="og:image" content="https://hazakfit.com/hazak-fit.jpg" />
+
+
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJMRWTFJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    // Limpar Service Workers antigos
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+          console.log('Service Worker removido:', registration);
+        }
+      });
+      // Limpar todos os caches
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          for (let name of names) {
+            caches.delete(name);
+            console.log('Cache removido:', name);
+          }
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>
